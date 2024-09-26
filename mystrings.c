@@ -49,7 +49,7 @@ int main (int argc, char *argv[])
         for (int i = 0; i < array_size ; i++)
         {
         	if(ascii_visible[i] == byte){
-        		printf("%s ", byte);
+        		printf("%c ", byte);
         	}
         }
     }
