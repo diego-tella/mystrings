@@ -49,7 +49,11 @@ int main (int argc, char *argv[])
         for (int i = 0; i < array_size ; i++)
         {
         	if(ascii_visible[i] == byte){
-        		printf("%c ", byte);
+        		cont = cont + 1;
+        		if (cont == 3){
+        			printf("%c%c%c\n", (ascii_visible[i]-2),(ascii_visible[i]-1),(ascii_visible[i]));
+        			cont = 0;
+        		}
         	}
         }
     }
